@@ -1,0 +1,131 @@
+.backround-img{
+    background-image: url('https://img.freepik.com/free-vector/abstract-geometric-style-halftone-banner-design_1017-39040.jpg?w=2000&t=st=1695874656~exp=1695875256~hmac=7db0ef384022f84b55a8d44cee92ce65aefd08cf64be6dd7e56293a331ca9737');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+    display: flex;
+    width: 100%;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap');
+
+.left-div {
+   
+    max-height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center; 
+    
+    flex-wrap: wrap;
+  }
+
+.left-div span{
+color: rgb(235, 124, 14);
+font-size: 60px;
+margin-top: 5px;
+margin-bottom: 0px;
+
+}
+
+.left-div p {
+   margin-bottom: 0px;
+   
+}
+.left-div button:hover{
+    border-color: rgb(235, 124, 14);
+    background-color: rgb(235, 124, 14);;
+}
+.right-divs {
+    font-size: 60px;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.text-container {
+  font-size: 60px;
+  display: flex;
+  margin-top: -180px;
+  font-family: "Martian Mono", sans-serif;
+  min-width: 900px;
+  padding: 10px;
+  margin-left: 20%;
+  display: block;
+
+}
+.left-div button {
+    border-radius: 7px;
+    width:160px;
+    height: 40px;
+    border-color: black;
+    color: black;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    font: bolder;
+    position: relative;
+    
+    top: 10px;
+    border: 3px solid #333
+}
+.nextImage{
+  width: 12%;
+  margin-left: 5px;
+}
+
+.right-divs img {
+
+    text-align: center; 
+    height: 95%;
+    width: 100%;
+    margin-top: -100px;
+  
+}
+.responsive-image {
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+/* Media query for screens up to a certain width */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+    
+    .left-div,
+    .right-divs {
+        flex: 100%; /* Make both divs take up 100% width on smaller screens */
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px; /* Further reduce padding on even smaller screens */
+    }
+}
+
+.container {
+   
+    width: 100%;
+    
+    box-sizing: border-box; 
+    display: flex;
+    /* flex-wrap: wrap;  */
+}
+
+.search-Bar {
+    width: 100%;
+    height: 150px;
+    display: flex;
+   justify-content: center;
+   margin-top: -100px;
+}
+.Bar {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    align-items: center;
+    border-radius: 10px
+}
