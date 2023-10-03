@@ -1,0 +1,82 @@
+
+.secound-Div-Conatiner{
+background-color: #f2f2f2;
+width: 100%;
+
+
+display: flex;
+justify-content: center;
+z-index: 1
+
+}
+
+.inner-Div{
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    display: block;
+    background-color: #f2f2f2; /* Add a background color for visibility */
+    text-align: center;
+    z-index: 1
+}
+
+.inner-Div-top{
+    display: flex;
+   height: 300px;
+   justify-content: center;
+   align-items: center;
+   z-index: 1
+ 
+}
+.inner-Div-top img{
+    width: 20%;
+    height: 25px;
+    mix-blend-mode: multiply;
+}
+
+.inner-Div-top P {
+    font-size: 35PX;
+    font-weight: 800;
+    font-style:initial
+}
+.inner-Div-top h1{
+    font-size: 15px;
+    width: 300px;
+}
+
+.box-Container {
+    width: 33.33%; /* Set the width to one-third (1/3) of the container width */
+    float: left; /* Float the divs left to stack them side by side */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    background-color: #f2f2f2; /* Add a background color for visibility */
+    padding: 20px; /* Add padding for spacing within the divs */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 10px;
+  
+}
+
+.box h1 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 750;
+    padding: 30px;
+   
+   margin-top: 0px;
+    
+}
+.box h1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+   
+}
+.box img {
+    width: 30%;
+    height: 80px;
+    mix-blend-mode: multiply;
+
+}

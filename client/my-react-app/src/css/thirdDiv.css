@@ -1,0 +1,147 @@
+.third-div{
+    background-color: rgb(238, 246, 247);
+    height: 2000px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.thirdDivContainer{
+    display: flex;
+    width:80%;
+    height: 90%;
+    flex-direction: column;
+
+}
+.thirdDiv-Top{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.thirdDiv-Top p {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+.thirdDiv-Top h1{
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    padding-top: 10px;
+}
+.thirdDiv-Buttom{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 30px; /* Space between divs */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+}
+.cardBox{
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.card{
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 90%;
+    border-radius: 9px;
+   
+    justify-content: center;
+    flex-direction: column
+
+}
+.card-Top{
+    height: 50%;
+    width: 100%;
+}
+
+.card-Top img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card-Buttom{
+height: 50%;
+width: 100%;
+display: flex;
+flex-direction: column
+}
+
+.card-Buttom P {
+  font-size: 25px;
+  padding-top: 10px;
+  margin: 0; 
+  font-weight: 800;
+  vertical-align: top; 
+  display: flex;
+  flex-direction: column;
+}
+.card-Buttom img {
+width: 35%;
+height: 10%;
+padding-top: 0px;
+margin: 0 ;
+}
+.card-Buttom h1{
+    color: grey;
+    font-weight: normal;
+    font-size: 110%;
+    margin: 0;
+    justify-content: center;
+}
+.ratingBox{
+    align-items: center;
+    display: flex;
+    gap: 6px;
+ 
+}
+.location-Box{
+   background-color:rgb(231, 246, 251) ;
+   color: grey;
+   padding-left: 10px;
+   border-radius: 2px;
+   font-weight: 700;
+   height: 40%;
+   display: flex;
+   justify-content: space-between;
+ 
+}
+
+
+.location-Box p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    justify-content: center;
+    
+}
+
+.location-Box h2 {
+    width: 100px;
+    gap: 4px;
+    color: black;
+    display: flex;
+    font-size: 20px;
+  
+
+}
+.location-Box h3 {
+   margin: 0;
+   padding: 0;
+   padding-top: 10px;
+   color:grey;
+   font-size: 12px;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+}
