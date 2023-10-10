@@ -1,0 +1,132 @@
+.fourth-Div{
+    background-image: url('https://media.istockphoto.com/id/1390835938/vector/studio-interior-with-carbon-fiber-texture-modern-carbon-fiber-textured-black-interior-with.jpg?s=612x612&w=0&k=20&c=kgq6k3A8I9EhsJmk-KTgM57nD-VcTFGu-suNJKvFt0M=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 550px;
+    display: flex;
+    width: 100%;
+  }
+
+  .fourth-Div-About{
+    width:60%;
+    color: #e0e0e0;
+  }
+
+.fourth-Div-Contact{
+    width:40%;
+    margin:20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.fourth-Div-About {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+ 
+    width: 80%;
+    grid-column-gap: 0; 
+    margin-left: 20%;
+  }
+  .grid-container2 {
+    display: flex;
+    height: 510px;
+   
+
+   
+  }
+  
+  .column1 {
+    margin:0;
+    padding: 0;
+    width: 50%;
+    border-radius: 5px;
+    height: 400px;
+    
+  }
+    
+  .column2 {
+ margin-left: -80px;
+    width: 50%;
+    border-radius: 5px;
+    height: 400px;
+    
+  }
+  ul {
+
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(161, 150, 150);
+  }
+  .orange-hr {
+    border: none;
+    background-color: orange;
+    height: 10px; /* Adjust the height as needed */
+    width:30%;
+    margin: 20px 0; 
+    border-radius: 40px;
+  }
+  
+  p {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+  }
+  
+  li:hover {
+    color: orange;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  
+  .grid-container2 {
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    height: 80%;
+    width: 80%;
+    grid-column-gap: 0;
+    margin-left: 20%;
+    color: #e0e0e0;
+  }
+  .grid-container2 p{
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .number{
+    font-size: 10px;
+    flex-direction: row;
+    display: flex;
+    margin-top: 15px;
+  }
+  .number img {
+    width:10%;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .number h1 {
+    display: flex;
+    margin: 0;
+    margin-left: 10px;
+    width: 150;
+
+
+    align-items: center;
+  }

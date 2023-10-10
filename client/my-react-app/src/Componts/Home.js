@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/topDiv.css"
 import carImage from '../css/car.png';
 import nextImage from '../css/next.png'
@@ -7,7 +7,29 @@ import searchBar from "./SearchBar"
 import "../css/Secound-div.css"
 import "../css/thirdDiv.css"
 import SearchBar from "./SearchBar";
+import Card from "./Card"
+import "../css/fourthDiv.css"
 const Home = () => {
+    const vehicleLink =  "http://127.0.0.1:5555/vehicles"
+    const [cars, setCars] = useState([])
+    useEffect(() => {
+          fetch(vehicleLink).then(response => response.json())
+          .then((data) => {
+             setCars(data)
+          })
+          .catch(error => {
+            console.error('An error occurred:', error);
+      
+          });
+      }, []); 
+
+    const renderCards = () => {
+        return cars.map((car) => (
+            <Card carImage={car.image} vehicle_Name={car.vehicle_Name} city={car.city} state={car.state} price={car.price}/>
+          ));
+        }
+    
+
 return(
     <div>
          <div  className="backround-img">
@@ -61,81 +83,57 @@ return(
                     <div className="thirdDiv-Top">
                         <p>Explore Popular Cars <br className="br"/>
                         <h1>dummy text dummy text dummy text dummy text dummy text dummy text </h1></p>
+                        
                     </div>
                     <div className="thirdDiv-Buttom">
-                            <div  className="cardBox">
-                                <div className="card ">
-                                    
-                                        <div className="card-Top">
-                                            
-                                            <img  src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg"/>
-                                        </div>
-                                        <div className="card-Buttom">
-                                            <div className="titleBox">
-                                                <p>FERRARI TITLE </p>
-                                                <div className="ratingBox">
-                                                    <img     src="https://www.pngmart.com/files/10/5-Stars-PNG-Image.png"/>
-                                                <h1>(5.0)</h1>
-                                                </div>
-                                                <hr></hr>
-                                                <div className="location-Box">
-                                                    <p>Palm Beach, FL</p>
-                                                    <h2>
-                                                    600<h3>/ DAY</h3>
-                                                    </h2>
-                                                </div>
-                                            </div>
-                                                                                        
-                                        </div>
-                                    
-
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
-                            <div  className="cardBox">
-                                <div>
-                                    <p>this the bx</p>
-                                </div>
-                            </div>
+                          {renderCards()}
                     </div>
                 </div>
          </div>
          <div className="fourth-Div">
-            div
+            <div className="fourth-Div-About">
+            <div class="grid-container">
+                <div class="column1">
+                        <ul><p>About Company</p>
+                        <hr class="orange-hr"></hr>
+                            <li>Our Company</li>
+                            <li>Partnerships</li>
+                            <li>USA Locations</li>
+                            <li>Guidelines</li>
+                            <li>Investors</li>
+                            <li>WorldWide Locations</li>
+                            <li>Virtual Auto Show</li>
+                           
+                        </ul>
+                </div>
+                <div class="column2">
+                        <ul><p>Quick Links</p>
+                        <hr class="orange-hr"></hr>
+                            <li>Events</li>
+                            <li>My Account</li>
+                            <li>Profile</li>
+                            <li>Listings</li>
+                            <li>Deals and Incentive</li>
+                            <li>Financial Services</li>
+                            <li>link1</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <div className="fourth-Div-Contact">
+            <div class="grid-container2"> 
+                <p>Contact Info</p>
+                <hr class="orange-hr"></hr>
+                <div  className="number">
+                   <img src="https://i.pinimg.com/1200x/4e/d7/d0/4ed7d0a3ecfc73035ee03ff12dc98a65.jpg"/> <h1>561-358-5753</h1>
+
+                </div>
+                <div  className="number">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjV9wYmAPlVeZDH05gY_uGZ1MK70Z6cFHSA&usqp=CAU"/> <h1>support@example.com</h1>
+
+                </div>
+            </div>
+            </div>
          </div>
     </div>
       

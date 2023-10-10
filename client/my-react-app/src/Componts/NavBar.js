@@ -39,10 +39,10 @@ const Navbar = () => {
    <div  className='right-div' >
         <ul className='right-nav' >
             <li>
-            <a href="/signup" class="button">SIGNUP</a>
+            <a href="/signup" className="button">SIGNUP</a>
              </li>
              <li>
-            <a href="/login" class="button">LOGIN</a>
+            <a href="/login" className="button">LOGIN</a>
             </li>
          </ul>
             </div>

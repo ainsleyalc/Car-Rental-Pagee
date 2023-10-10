@@ -24,8 +24,8 @@ const SearchBar = () =>{
                 <p>Car Type</p>
                 <select
                     id="car-type"
-                    value={null}
-                    onChange={(e) => null}
+                    value={console.log('changing')}
+                    onChange={(e) => console.log('changing')}
                 >
                     <option value="compact">Compact</option>
                     <option value="sedan">Sedan</option>
@@ -33,7 +33,7 @@ const SearchBar = () =>{
                     <option value="luxury">Luxury</option>
                 </select>
 
-                <button id="search-button" onClick={null}>Search</button>
+                <button id="search-button" onClick={console.log("clicking")}>Search</button>
                             </div>
                 
             </div>
