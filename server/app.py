@@ -8,37 +8,38 @@ from flask_cors import CORS
 from sqlalchemy import MetaData
 from sqlalchemy import create_engine
 import psycopg2
-app = Flask(__name__)
-api = Api(app)
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-migrate = Migrate(app,db,render_as_batch=True)
+def create_app():
+    app = Flask(__name__)
+    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-CORS(app)
+    db.init_app(app)
+    migrate = Migrate(app, db, render_as_batch=True)
+    CORS(app)
+    api = Api(app)
 
-db.init_app(app)
+    class Vehicles(Resource):
+        def get(self):
+            vehicles = [vehicle.to_dict() for vehicle in Vehicle.query.all()]
+            return make_response(jsonify(vehicles), 201)
 
-@app.route("/")
-def home():
-    return "<h1>hello<h1>"
+    api.add_resource(Vehicles, "/vehicles")
 
+    @app.route("/")
+    def home():
+        return "<h1>Hello</h1>"
 
+    return app  # Make sure you return the Flask app instance
 
-class Vehicles(Resource):
-    def get(self):
-      vehicle = [vehicle.to_dict() for vehicle in Vehicle.query.all()]
-      return make_response(jsonify(vehicle), 201)
-
-
-
-api.add_resource(Vehicles, "/vehicles")
-
-
-
-
-
+# Check if this script is the main module
 if __name__ == '__main__':
+    app = create_app()  # Assign the Flask app instance to the 'app' variable
     app.run(debug=True, port=5555)
+
+
+
+
+
 
 
 
