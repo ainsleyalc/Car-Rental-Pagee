@@ -10,7 +10,7 @@ from sqlalchemy import create_engine
 import psycopg2
 def create_app():
     app = Flask(__name__)
-    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+    app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://cars_be1j_user:Ed8rJohhyAlOP8MHO9RXeRvjNma0QJDP@dpg-ckipl98mccbs73bjedgg-a.ohio-postgres.render.com/cars_be1j"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
     db.init_app(app)
