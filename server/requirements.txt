@@ -35,6 +35,6 @@ pipenv==2023.4.29
 
 SQLAlchemy==2.0.19
 SQLAlchemy-serializer==1.4.1
-
+gunicorn<20.1.0
 virtualenv==20.23.0
 virtualenv-clone==0.5.7
