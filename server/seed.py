@@ -1,5 +1,5 @@
 from model import db, User, Vehicle
-from app import app
+from app import create_app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 def delete_records():
@@ -115,6 +115,7 @@ def create_seed_data():
     db.session.commit()
 
 if __name__ == '__main__':
+    app = create_app()
     with app.app_context():
         delete_records()
         create_seed_data()
