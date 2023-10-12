@@ -10,12 +10,13 @@ import SearchBar from "./SearchBar";
 import Card from "./Card"
 import "../css/fourthDiv.css"
 const Home = () => {
-    const vehicleLink =  "http://127.0.0.1:5555/vehicles"
+    const vehicleLink =  "https://car-rental-template.onrender.com/vehicles"
     const [cars, setCars] = useState([])
     useEffect(() => {
           fetch(vehicleLink).then(response => response.json())
           .then((data) => {
              setCars(data)
+             console.log(cars)
           })
           .catch(error => {
             console.error('An error occurred:', error);
