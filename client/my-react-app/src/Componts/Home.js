@@ -10,7 +10,7 @@ import SearchBar from "./SearchBar";
 import Card from "./Card"
 import "../css/fourthDiv.css"
 const Home = () => {
-    const vehicleLink =  "https://car-rental-template.onrender.com/vehicles"
+    const vehicleLink =  "http://54.236.248.191"
     const [cars, setCars] = useState([])
     useEffect(() => {
           fetch(vehicleLink).then(response => response.json())
@@ -43,7 +43,7 @@ return(
                     </div>
                 </div>
                 <div className="right-divs">
-                    <img src={carImage}alt="ITS LOADING"  className="responsive-image"/>
+                    {/* <img src={carImage}alt="ITS LOADING"  className="responsive-image"/> */}
                 </div> 
             </div>
         </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
     
             <ul className='navBar'       >
                 <div className='left-Div'>
-                    <img className='logo-img'  src='https://dreamsrent.dreamguystech.com/html/assets/img/logo.svg' />
+                    <img className='logo-img'  src='https://t3.ftcdn.net/jpg/03/61/35/70/360_F_361357036_ULjReSkqZlkozXSNJofGgjFooO6Mpgg9.jpg' />
 
                 </div>
 
@@ -23,13 +23,13 @@ const Navbar = () => {
                 <div className='MiddleDiv'>
                     <ul   className='MiddleNav'   >
                         <li>
-                            <a href="/home">Home</a>
+                            <a >Home</a>
                         </li>
                         <li>
-                            <a href="/about">Listing</a>
+                            <a >Listing</a>
                         </li>
                         <li>
-                            <a href="/contact">Contact</a>
+                            <a >Contact</a>
                         </li>  
 
                     </ul>
@@ -39,10 +39,10 @@ const Navbar = () => {
    <div  className='right-div' >
         <ul className='right-nav' >
             <li>
-            <a href="/signup" className="button">SIGNUP</a>
+            <a  className="button">SIGNUP</a>
              </li>
              <li>
-            <a href="/login" className="button">LOGIN</a>
+            <a  className="button">LOGIN</a>
             </li>
          </ul>
             </div>

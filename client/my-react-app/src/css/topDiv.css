@@ -1,11 +1,12 @@
 .backround-img{
-    background-image: url('https://img.freepik.com/free-vector/abstract-geometric-style-halftone-banner-design_1017-39040.jpg?w=2000&t=st=1695874656~exp=1695875256~hmac=7db0ef384022f84b55a8d44cee92ce65aefd08cf64be6dd7e56293a331ca9737');
+    background-image: url('https://img.freepik.com/premium-vector/abstract-simple-shape-with-yellow-white-black-color-background-with-papercut-style-wallpaper_610637-1027.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 700px;
     display: flex;
     width: 100%;
+    margin-top: -10px
   }
   @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap');
 
@@ -40,6 +41,7 @@ margin-bottom: 0px;
     width: 50%;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 
@@ -53,6 +55,9 @@ margin-bottom: 0px;
   margin-left: 20%;
   display: block;
 
+}
+.text-container h1 {
+    color: white;
 }
 .left-div button {
     border-radius: 7px;
@@ -119,7 +124,7 @@ margin-bottom: 0px;
 .text-container h1 {
     font-size: 100px;
     width: 600px;
-    color: #333;
+   
     font: caption;
     font-weight: normal;
 }
